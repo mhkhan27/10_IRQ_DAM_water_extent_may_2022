@@ -4,7 +4,7 @@ import fiona
 import pandas as pd
 import glob
 import openpyxl
-import rasterio
+import rasterio+
 import numpy as np
 from osgeo import gdal,  ogr, osr
 import rasterio.features
