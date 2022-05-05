@@ -1,0 +1,11 @@
+#ignore files
+inputs/GEE_output_img/*
+outputs/water_poly/*
+
+*.RData
+*.Rhistory
+*.html
+*.kml
+
+!/inputs/GEE_output_img/.gitkeep
+!/outputs/water_poly/.gitkeep
