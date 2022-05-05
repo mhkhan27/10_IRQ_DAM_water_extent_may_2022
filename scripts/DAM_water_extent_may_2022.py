@@ -42,7 +42,7 @@ for i in file:
     poly_with_dam_info2["area"] = poly_with_dam_info2['geometry'].area / 10 ** 6
     year = re.findall('\d+', i )
     poly_with_dam_info2["Year"] = str(year)
-    poly_with_dam_info2.to_file("outputs/water_poly_" +str(year)+".shp")
+    poly_with_dam_info2.to_file("outputs/water_poly/" +str(year)+".shp")
     csv[i] = pd.DataFrame(poly_with_dam_info2)
 
 all_merge =pd.concat(csv.values(), ignore_index=True)
